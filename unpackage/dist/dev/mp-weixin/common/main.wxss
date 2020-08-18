@@ -1,0 +1,268 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*每个页面公共css */
+page {
+	height: 100%;
+	-webkit-overflow-scrolling: touch;
+}
+.page-template{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.page-template-wrap{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.page-template-wrap-center{
+	width: 100%;
+	/* 没有导航 用1334 有导航用 1334-底部导航高度 */
+	height: 1334rpx;
+	/* height: 1234rpx; */
+	overflow: hidden;
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+/* 
+*  x 代表水平方向 y垂直方向
+*  c 居中 （垂直居中、水平居中）
+*  n 不做控制
+*  sb 水平 两端对齐，项目之间的间隔都相等。
+*  */
+/* 水平不做控制 垂直不做控制  */
+.flex-xn-yn{
+	display: -webkit-flex; /* Safari */
+	display: -webkit-box;
+	display: flex;
+}
+/* 水平居中 垂直不做控制  水平排列*/
+.flex-xc-yn{
+	display: -webkit-flex; /* Safari */
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-pack:center;
+	        justify-content:center;
+	-webkit-justify-content:center;
+}
+/* 水平不做控制 垂直居中  水平排列*/
+.flex-xn-yc{
+	display: -webkit-flex; /* Safari */
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-align: center;
+	        align-items: center;
+	-webkit-align-items: center;
+}
+/* 水平居中 垂直居中  水平排列*/
+.flex-xc-yc{
+	display: -webkit-flex; /* Safari */
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-pack: center;
+	        justify-content: center;
+	-webkit-justify-content: center;
+	-webkit-box-align: center;
+	        align-items: center;
+	-webkit-align-items: center;
+}
+/* 水平两端对齐，项目之间的间隔都相等  垂直居中  */
+.flex-xsb-yc{
+	display: -webkit-flex; /* Safari */
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-pack:justify;
+	        justify-content:space-between;
+	-webkit-justify-content:space-between;
+	-webkit-box-align:center;
+	        align-items:center;
+	-webkit-align-items:center;
+}
+/* 水平两端对齐，项目之间的间隔都相等  垂直居中  */
+.flex-xsb-yn{
+	display: -webkit-flex; /* Safari */
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-pack:justify;
+	        justify-content:space-between;
+	-webkit-justify-content:space-between;
+}
+/* 水平 从右到左  */
+.flex-xR-yn{
+	display: -webkit-flex; /* Safari */
+	display: -webkit-box;
+	display: flex;
+	-webkit-flex-direction:space-between;
+	-webkit-box-orient:horizontal;
+	-webkit-box-direction:reverse;
+	        flex-direction:row-reverse;
+}
+/* 垂直 从上到下  */
+.flex-xn-ys{
+	display: -webkit-flex; /* Safari */
+	display: -webkit-box;
+	display: flex;
+	-webkit-flex-direction:column;
+	-webkit-box-orient:vertical;
+	-webkit-box-direction:normal;
+	        flex-direction:column;
+}
+/*   多个 盒子上下排列 水平居中 垂直居中*/
+.flex-xc-yc-dirY{
+	display: -webkit-flex; /* Safari */
+	display: -webkit-box;
+	display: flex;
+	-webkit-flex-direction:column;
+	-webkit-box-orient:vertical;
+	-webkit-box-direction:normal;
+	        flex-direction:column;
+	-webkit-box-pack: center;
+	        justify-content: center;
+	-webkit-justify-content: center;
+	-webkit-box-align: center;
+	        align-items: center;
+	-webkit-align-items: center;
+}
+/*   多个 盒子上下排列 水平居中 垂直从上到下*/
+.flex-xc-ys-dirY{
+	display: -webkit-flex; /* Safari */
+	display: -webkit-box;
+	display: flex;
+	-webkit-flex-direction:column;
+	-webkit-box-orient:vertical;
+	-webkit-box-direction:normal;
+	        flex-direction:column;
+	-webkit-box-align: center;
+	        align-items: center;
+	-webkit-align-items: center;
+}
+image{
+	height: auto;
+}
+

@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "我的",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "uni-nav-bar": "/components/uni-nav-bar/uni-nav-bar",
+    "wx-guidance-operation": "/components/wx-guidance-operation/wx-guidance-operation",
+    "activity-rule": "/components/activityRule",
+    "weixin-guidance-operation": "/components/wx-guidance-operation/wx-guidance-operation"
+  }
+}
